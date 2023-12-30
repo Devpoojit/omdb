@@ -1,3 +1,15 @@
+document.getElementById('movie-input').addEventListener('keypress', function(event) {
+    // Check if the key pressed is 'Enter'
+    if (event.key === 'Enter') {
+      // Prevent the default action to avoid submitting the form if the input is inside one
+      event.preventDefault();
+  
+      // Trigger the button click
+      document.getElementById('search-button').click();
+    }
+  });
+  
+
 
 function getMovie() {
     let input = document.getElementById("movie-input").value;
