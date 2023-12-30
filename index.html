@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Movie Finder</h1>
+    <div class="container">
+        <div class="textInputWrapper">
+            <input placeholder="Enter Movie Name" type="text" class="textInput" id="movie-input">
+        </div>
+        <div class="btn-class">
+            <button class="btn" type="button" onclick="getMovie()">
+                <strong>SEARCH</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+              
+        </div>
+    </div>
+    <br><br>
+    <div class="out-container">
+        <div class="text-out">
+            <h2 class="out" id="name">Movie Name</h2>
+            <p class="out" id="actors">Actors</p>
+            <p class="out" id="awards">Awards</p>
+            <p class="out" id="director">Director</p>
+            <p class="out" id="genre">Genre</p>
+            <p class="out" id="plot">Plot</p>
+        </div>
+        <div class="poster">
+            <img src="" alt="Poster of " id="pic">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
